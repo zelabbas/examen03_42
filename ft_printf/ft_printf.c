@@ -2,13 +2,12 @@
 #include <stdarg.h>
 
 
-int ft_strlen(const char *str)
+int	ft_strlen(char *str)
 {
-	int i;
+	int i = -1;
 
-	i = 0;
-	while (str[i])
-		i++;
+	while (str[++i])
+		;
 	return (i);
 }
 
